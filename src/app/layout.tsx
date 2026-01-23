@@ -1,0 +1,34 @@
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  title: 'MeetEasy - Schedule Meetings Without the Back-and-Forth',
+  description: 'Simple scheduling platform with built-in CRM and booking management. Create event types, set availability, and let clients book automatically.',
+  keywords: 'scheduling, calendar, booking, appointment scheduling, CRM, meeting scheduler',
+  openGraph: {
+    title: 'MeetEasy - Schedule Meetings Without the Back-and-Forth',
+    description: 'Simple scheduling platform with built-in CRM and booking management.',
+    type: 'website',
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
