@@ -4,6 +4,8 @@ const nextConfig = {
   images: {
     domains: [],
   },
+  // Railway will set PORT automatically, Next.js will use it
+  // No need to explicitly set port in config
 }
 
 module.exports = nextConfig

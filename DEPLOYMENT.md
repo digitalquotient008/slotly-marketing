@@ -44,13 +44,30 @@
 5. Publish directory: `.next`
 6. Set environment variables
 
-### Railway
+### Railway (Same Project as Backend)
 
-1. Push code to GitHub
-2. Create new project in Railway
-3. Connect GitHub repository
-4. Set environment variables
-5. Deploy
+**Option A: Separate Service in Same Project (Recommended)**
+
+1. In your existing Railway project, click "New Service"
+2. Select "GitHub Repo" and choose the `meeteasy-marketing` repository
+3. Railway will auto-detect Next.js and use `nixpacks.toml`
+4. Set environment variables:
+   - `NEXT_PUBLIC_APP_URL` = Your backend Railway URL (e.g., `https://consultslot-production.up.railway.app`)
+   - `NEXT_PUBLIC_MARKETING_URL` = This service's Railway URL (auto-generated)
+5. Railway will automatically deploy
+
+**Option B: Separate Railway Project**
+
+1. Create new Railway project
+2. Connect GitHub repository (`meeteasy-marketing`)
+3. Set environment variables
+4. Deploy
+
+**Benefits of Railway:**
+- Same platform as backend (unified infrastructure)
+- Easy service-to-service communication
+- Shared environment variables
+- Simple deployment workflow
 
 ### GitHub Pages (Static Export)
 
