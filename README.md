@@ -1,6 +1,6 @@
-# MeetEasy Marketing Website
+# Slotly Marketing Website
 
-Modern, SEO-optimized marketing website for MeetEasy built with Next.js, TypeScript, and TailwindCSS.
+Modern, SEO-optimized marketing website for Slotly built with Next.js, TypeScript, and TailwindCSS.
 
 ## Features
 
@@ -45,8 +45,8 @@ npm start
 Create a `.env.local` file:
 
 ```env
-NEXT_PUBLIC_APP_URL=https://app.meeteasy.com
-NEXT_PUBLIC_MARKETING_URL=https://meeteasy.com
+NEXT_PUBLIC_APP_URL=https://app.slotly.com
+NEXT_PUBLIC_MARKETING_URL=https://slotly.com
 GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
 ```
 
@@ -68,7 +68,7 @@ GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
 ## Project Structure
 
 ```
-meeteasy-marketing/
+slotly-marketing/
 ├── public/          # Static assets
 ├── src/
 │   ├── app/         # Next.js pages

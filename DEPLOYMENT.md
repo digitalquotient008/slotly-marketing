@@ -1,4 +1,4 @@
-# Deployment Guide for MeetEasy Marketing Website
+# Deployment Guide for Slotly Marketing Website
 
 ## Quick Start
 
@@ -10,8 +10,8 @@
 2. **Set Environment Variables**
    Create `.env.local`:
    ```env
-   NEXT_PUBLIC_APP_URL=https://app.meeteasy.com
-   NEXT_PUBLIC_MARKETING_URL=https://meeteasy.com
+   NEXT_PUBLIC_APP_URL=https://app.slotly.com
+   NEXT_PUBLIC_MARKETING_URL=https://slotly.com
    ```
 
 3. **Run Development Server**
@@ -27,13 +27,23 @@
 
 ## Deployment Options
 
-### Vercel (Recommended)
+### Vercel (Recommended) ⭐
 
+**Best choice for Next.js!** See [VERCEL_DEPLOY.md](./VERCEL_DEPLOY.md) for detailed instructions.
+
+Quick steps:
 1. Push code to GitHub
 2. Go to [vercel.com](https://vercel.com)
-3. Import your repository
-4. Set environment variables in Vercel dashboard
+3. Import your repository (`slotly-marketing`)
+4. Set environment variables
 5. Deploy automatically
+
+**Benefits:**
+- Zero configuration (auto-detects Next.js)
+- Automatic deployments on git push
+- Global CDN for fast performance
+- Free tier with generous limits
+- Preview deployments for PRs
 
 ### Netlify
 
@@ -49,7 +59,7 @@
 **Option A: Separate Service in Same Project (Recommended)**
 
 1. In your existing Railway project, click "New Service"
-2. Select "GitHub Repo" and choose the `meeteasy-marketing` repository
+2. Select "GitHub Repo" and choose the `slotly-marketing` repository
 3. Railway will auto-detect Next.js and use `nixpacks.toml`
 4. Set environment variables:
    - `NEXT_PUBLIC_APP_URL` = Your backend Railway URL (e.g., `https://consultslot-production.up.railway.app`)
@@ -59,7 +69,7 @@
 **Option B: Separate Railway Project**
 
 1. Create new Railway project
-2. Connect GitHub repository (`meeteasy-marketing`)
+2. Connect GitHub repository (`slotly-marketing`)
 3. Set environment variables
 4. Deploy
 
@@ -80,8 +90,8 @@
 
 ## Environment Variables
 
-- `NEXT_PUBLIC_APP_URL` - Backend application URL (default: https://app.meeteasy.com)
-- `NEXT_PUBLIC_MARKETING_URL` - Marketing website URL (default: https://meeteasy.com)
+- `NEXT_PUBLIC_APP_URL` - Backend application URL (default: https://app.slotly.com)
+- `NEXT_PUBLIC_MARKETING_URL` - Marketing website URL (default: https://slotly.com)
 - `GOOGLE_ANALYTICS_ID` - Optional Google Analytics ID
 
 ## Custom Domain Setup

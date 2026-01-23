@@ -1,4 +1,4 @@
-# Deploying MeetEasy Marketing Website on Railway
+# Deploying Slotly Marketing Website on Railway
 
 ## Quick Setup
 
@@ -6,7 +6,7 @@
 
 1. **Go to your Railway project** (the one with your backend)
 2. **Click "New Service"** → **"GitHub Repo"**
-3. **Select the `meeteasy-marketing` repository**
+3. **Select the `slotly-marketing` repository**
 4. **Railway will auto-detect Next.js** and use the `nixpacks.toml` configuration
 5. **Set Environment Variables:**
    ```
@@ -17,14 +17,14 @@
 
 6. **Generate Domain** (optional but recommended):
    - Click on the service → Settings → Generate Domain
-   - This gives you a public URL like `meeteasy-marketing.up.railway.app`
+   - This gives you a public URL like `slotly-marketing.up.railway.app`
 
 7. **Deploy!** Railway will automatically build and deploy
 
 ### Option 2: Create Separate Railway Project
 
 1. Create a new Railway project
-2. Add GitHub repository: `meeteasy-marketing`
+2. Add GitHub repository: `slotly-marketing`
 3. Set environment variables
 4. Generate domain
 5. Deploy
@@ -39,7 +39,7 @@ Set these in Railway dashboard:
 
 - `NEXT_PUBLIC_MARKETING_URL` - This marketing site's URL
   - Auto-set by Railway: `${{MarketingService.RAILWAY_PUBLIC_DOMAIN}}`
-  - Or manually: `https://meeteasy-marketing.up.railway.app`
+  - Or manually: `https://slotly-marketing.up.railway.app`
 
 - `GOOGLE_ANALYTICS_ID` (optional) - For analytics tracking
 

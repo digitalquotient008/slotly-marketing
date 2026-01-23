@@ -9,11 +9,11 @@ interface CTAProps {
 
 export default function CTA({ 
   title = 'Ready to get started?',
-  description = 'Join thousands of professionals who use MeetEasy to schedule smarter.',
+  description = 'Join thousands of professionals who use Slotly to schedule smarter.',
   buttonText = 'Sign up for free',
   variant = 'primary'
 }: CTAProps) {
-  const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.meeteasy.com';
+  const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.slotly.com';
 
   return (
     <section className={`py-20 ${variant === 'primary' ? 'bg-gradient-to-br from-blue-600 to-indigo-700' : 'bg-white'}`}>

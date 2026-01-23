@@ -2,8 +2,8 @@ import CTA from '@/components/CTA';
 import { MVP_FEATURES } from '@/lib/constants';
 
 export const metadata = {
-  title: 'Pricing - MeetEasy',
-  description: 'Simple, transparent pricing for MeetEasy scheduling platform.',
+  title: 'Pricing - Slotly',
+  description: 'Simple, transparent pricing for Slotly scheduling platform.',
 };
 
 export default function PricingPage() {
@@ -21,12 +21,12 @@ export default function PricingPage() {
       answer: 'We\'re working on built-in video conferencing, calendar sync, invoicing, meeting polls, and website embedding widgets. These features exist in the codebase and will be enabled based on user feedback.',
     },
     {
-      question: 'Can I self-host MeetEasy?',
-      answer: 'Yes! MeetEasy is open-source and can be self-hosted. You own your data and have full control over your deployment.',
+      question: 'Can I self-host Slotly?',
+      answer: 'Yes! Slotly is open-source and can be self-hosted. You own your data and have full control over your deployment.',
     },
     {
       question: 'Is there a free tier?',
-      answer: 'Yes, MeetEasy is free to start. No credit card required. You can begin scheduling immediately after signing up.',
+      answer: 'Yes, Slotly is free to start. No credit card required. You can begin scheduling immediately after signing up.',
     },
   ];
 

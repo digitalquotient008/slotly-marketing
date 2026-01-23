@@ -6,10 +6,10 @@ export default function Comparison() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            How MeetEasy compares
+            How Slotly compares
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            See how MeetEasy stacks up against the competition
+            See how Slotly stacks up against the competition
           </p>
         </div>
         
@@ -19,7 +19,7 @@ export default function Comparison() {
               <tr>
                 <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
                 <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">Calendly</th>
-                <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">MeetEasy</th>
+                <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900">Slotly</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-200">
@@ -30,7 +30,7 @@ export default function Comparison() {
                     {item.calendly ? '✅' : '❌'}
                   </td>
                   <td className="px-6 py-4 text-center text-sm text-gray-600">
-                    {item.meeteasy ? '✅' : '❌'}
+                    {item.slotly ? '✅' : '❌'}
                     {item.note && (
                       <p className="text-xs text-gray-500 mt-1">{item.note}</p>
                     )}

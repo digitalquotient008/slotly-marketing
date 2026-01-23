@@ -1,4 +1,4 @@
-# Complete Setup Guide - MeetEasy Marketing Website
+# Complete Setup Guide - Slotly Marketing Website
 
 ## Step 1: Create GitHub Repository
 
@@ -6,8 +6,8 @@
 
 1. Go to: https://github.com/new
 2. Fill in:
-   - **Repository name**: `meeteasy-marketing`
-   - **Description**: "Marketing website for MeetEasy scheduling platform"
+   - **Repository name**: `slotly-marketing`
+   - **Description**: "Marketing website for Slotly scheduling platform"
    - **Visibility**: Public (or Private if you prefer)
    - **⚠️ IMPORTANT**: Do NOT check any boxes (no README, no .gitignore, no license)
 3. Click **"Create repository"**
@@ -17,15 +17,15 @@
 After creating the repository, run:
 
 ```bash
-cd /Users/girishreddy/DEV_WORKSPACES/meeteasy-marketing
+cd /Users/girishreddy/DEV_WORKSPACES/slotly-marketing
 ./PUSH_TO_GITHUB.sh
 ```
 
 Or manually:
 
 ```bash
-cd /Users/girishreddy/DEV_WORKSPACES/meeteasy-marketing
-git remote add origin https://github.com/digitalquotient008/meeteasy-marketing.git
+cd /Users/girishreddy/DEV_WORKSPACES/slotly-marketing
+git remote add origin https://github.com/digitalquotient008/slotly-marketing.git
 git branch -M main
 git push -u origin main
 ```
@@ -33,7 +33,7 @@ git push -u origin main
 ## Step 3: Verify Repository
 
 Check that everything is pushed:
-- Visit: https://github.com/digitalquotient008/meeteasy-marketing
+- Visit: https://github.com/digitalquotient008/slotly-marketing
 - You should see all files including:
   - `package.json`
   - `src/` directory
@@ -47,7 +47,7 @@ Once the code is on GitHub:
 
 1. **Go to your Railway project** (the one with your backend)
 2. **Click "New Service"** → **"GitHub Repo"**
-3. **Select `meeteasy-marketing` repository**
+3. **Select `slotly-marketing` repository**
 4. **Railway will auto-detect Next.js** and use `nixpacks.toml`
 5. **Set Environment Variables:**
    ```
@@ -62,7 +62,7 @@ Once the code is on GitHub:
 
 ### "Repository not found" error
 - Make sure you created the repository on GitHub first (Step 1)
-- Check the repository name matches exactly: `meeteasy-marketing`
+- Check the repository name matches exactly: `slotly-marketing`
 - Verify you have access to `digitalquotient008` organization/account
 
 ### Authentication issues
@@ -85,4 +85,4 @@ Once the code is on GitHub:
 ## Repository URL
 
 Once created, your repository will be at:
-**https://github.com/digitalquotient008/meeteasy-marketing**
+**https://github.com/digitalquotient008/slotly-marketing**

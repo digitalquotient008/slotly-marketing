@@ -1,4 +1,4 @@
-export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.meeteasy.com';
+export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.slotly.com';
 
 export const MVP_FEATURES = [
   {
@@ -96,27 +96,27 @@ export const COMPARISON_FEATURES = [
   {
     feature: 'Core Scheduling',
     calendly: true,
-    meeteasy: true,
+    slotly: true,
   },
   {
     feature: 'Contact Management',
     calendly: false,
-    meeteasy: true,
-    note: 'External for Calendly, Built-in for MeetEasy',
+    slotly: true,
+    note: 'External for Calendly, Built-in for Slotly',
   },
   {
     feature: 'Booking Management',
     calendly: true,
-    meeteasy: true,
+    slotly: true,
   },
   {
     feature: 'Self-hosted',
     calendly: false,
-    meeteasy: true,
+    slotly: true,
   },
   {
     feature: 'Email/Password Auth',
     calendly: true,
-    meeteasy: true,
+    slotly: true,
   },
 ];

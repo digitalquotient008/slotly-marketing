@@ -3,8 +3,8 @@ import Comparison from '@/components/Comparison';
 import CTA from '@/components/CTA';
 
 export const metadata = {
-  title: 'Features - MeetEasy',
-  description: 'Discover all the features MeetEasy offers for scheduling and managing appointments.',
+  title: 'Features - Slotly',
+  description: 'Discover all the features Slotly offers for scheduling and managing appointments.',
 };
 
 export default function FeaturesPage() {

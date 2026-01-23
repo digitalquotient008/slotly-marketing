@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.meeteasy.com';
+  const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.slotly.com';
 
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -13,7 +13,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold text-blue-600">
-              MeetEasy
+              Slotly
             </Link>
             <div className="hidden md:flex ml-10 space-x-8">
               <Link href="/features" className="text-gray-600 hover:text-gray-900 text-sm font-medium">

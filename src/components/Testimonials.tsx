@@ -3,7 +3,7 @@ export default function Testimonials() {
     {
       name: 'Sarah Johnson',
       role: 'Business Consultant',
-      content: 'MeetEasy has simplified my scheduling process. My clients love the easy booking experience.',
+      content: 'Slotly has simplified my scheduling process. My clients love the easy booking experience.',
       avatar: 'SJ',
     },
     {
