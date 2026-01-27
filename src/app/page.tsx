@@ -1,7 +1,6 @@
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import HowItWorks from '@/components/HowItWorks';
-import Integrations from '@/components/Integrations';
 import Statistics from '@/components/Statistics';
 import Security from '@/components/Security';
 import Testimonials from '@/components/Testimonials';
@@ -28,8 +27,6 @@ export default function Home() {
       </section>
 
       <Features />
-      
-      <Integrations />
       
       <HowItWorks />
       

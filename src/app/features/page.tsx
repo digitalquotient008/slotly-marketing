@@ -1,5 +1,4 @@
-import { MVP_FEATURES, FUTURE_FEATURES, COMPARISON_FEATURES } from '@/lib/constants';
-import Comparison from '@/components/Comparison';
+import { MVP_FEATURES, FUTURE_FEATURES } from '@/lib/constants';
 import CTA from '@/components/CTA';
 
 export const metadata = {
@@ -67,8 +66,6 @@ export default function FeaturesPage() {
           </div>
         </div>
       </section>
-
-      <Comparison />
 
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

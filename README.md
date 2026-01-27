@@ -8,7 +8,6 @@ Modern, SEO-optimized marketing website for Slotly built with Next.js, TypeScrip
 - Responsive design (mobile-first)
 - Fast performance with Next.js static generation
 - MVP-focused content highlighting core features
-- Comparison table vs Calendly
 - FAQ section
 - Roadmap for future features
 
