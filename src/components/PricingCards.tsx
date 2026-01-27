@@ -45,8 +45,8 @@ export default function PricingCards() {
       price: billingPeriod === 'yearly' ? '$10' : '$12',
       priceSubtext: '/user per month',
       savings: billingPeriod === 'yearly' ? 'Save 16%' : null,
-      badge: null,
-      recommended: false,
+      badge: 'Recommended plan',
+      recommended: true,
       buttonText: 'Get started',
       buttonStyle: 'bg-blue-600 text-white hover:bg-blue-700',
       features: [
@@ -62,12 +62,12 @@ export default function PricingCards() {
     {
       name: 'Teams',
       description: 'For growing businesses',
-      price: billingPeriod === 'yearly' ? '$16' : '$20',
-      priceSubtext: '/user per month',
-      savings: billingPeriod === 'yearly' ? 'Save 20%' : null,
-      badge: 'Recommended plan',
-      recommended: true,
-      buttonText: 'Try for Free',
+      price: null,
+      priceSubtext: '',
+      savings: null,
+      badge: null,
+      recommended: false,
+      buttonText: 'Talk to sales',
       buttonStyle: 'bg-blue-600 text-white hover:bg-blue-700',
       features: [
         'Everything in Standard',
@@ -77,7 +77,7 @@ export default function PricingCards() {
         'Team management',
         'Advanced reporting',
       ],
-      comingSoon: true,
+      comingSoon: false,
     },
     {
       name: 'Enterprise',
@@ -175,7 +175,7 @@ export default function PricingCards() {
               )}
             </div>
 
-            {plan.name === 'Enterprise' ? (
+            {plan.name === 'Enterprise' || plan.name === 'Teams' ? (
               <a
                 href="mailto:sales@slotly.com"
                 className={`block w-full text-center px-4 py-3 rounded-lg font-semibold transition-colors mb-6 ${plan.buttonStyle}`}
