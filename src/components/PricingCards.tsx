@@ -55,7 +55,7 @@ export default function PricingCards() {
         'Priority support',
         'Custom integrations',
         'Team collaboration',
-        'API access',
+        'Advanced scheduling rules',
       ],
       comingSoon: true,
     },
