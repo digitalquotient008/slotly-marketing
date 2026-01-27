@@ -16,7 +16,7 @@ export default function ContactPage() {
               Contact Sales
             </h1>
             <p className="text-xl text-gray-600">
-              Interested in Teams or Enterprise plans? Let's discuss how Slotly can help your organization.
+              Interested in Teams or Enterprise plans? Let&apos;s discuss how Slotly can help your organization.
             </p>
           </div>
 
