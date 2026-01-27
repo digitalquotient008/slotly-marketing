@@ -4,7 +4,11 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
   title: 'Slotly - Schedule Meetings Without the Back-and-Forth',
@@ -24,7 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${inter.variable}`}>
         <Header />
         <main>{children}</main>
         <Footer />

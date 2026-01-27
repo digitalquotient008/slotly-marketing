@@ -36,7 +36,7 @@ export default function Header() {
             </Link>
             <Link 
               href={`${APP_URL}/auth/signup`} 
-              className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700"
+              className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-blue-700 transition-colors focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2"
             >
               Sign Up
             </Link>
