@@ -2,44 +2,29 @@ export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.slotly.co
 
 export const MVP_FEATURES = [
   {
-    title: 'Simple Scheduling',
-    description: 'Create event types and set availability in minutes',
-    icon: '📅',
-  },
-  {
-    title: 'Public Booking Pages',
-    description: 'Shareable links for clients to book appointments',
+    title: 'Customize Your Booking Link',
+    description: 'Create a personalized booking URL that matches your brand. Share your unique link anywhere.',
     icon: '🔗',
   },
   {
-    title: 'Built-in CRM',
-    description: 'Auto-capture contacts and track booking history',
+    title: 'View Contact Profiles & Activity',
+    description: 'Track all interactions with your contacts. See booking history, notes, and scheduling activity in one place.',
     icon: '👥',
   },
   {
-    title: 'Booking Management',
-    description: 'View, cancel, reschedule, and add notes to bookings',
-    icon: '✏️',
+    title: 'Control Your Availability',
+    description: 'Only get booked when you want to be. Set meeting limits, buffers, and advanced scheduling rules.',
+    icon: '⏰',
   },
   {
-    title: 'Email Notifications',
-    description: 'Automatic confirmations for hosts and clients',
-    icon: '📧',
+    title: 'Book on Behalf of Others',
+    description: 'Schedule meetings for team members or colleagues. Perfect for assistants managing multiple calendars.',
+    icon: '📋',
   },
   {
-    title: 'Timezone Support',
-    description: 'Automatic timezone conversion for everyone',
-    icon: '🌍',
-  },
-  {
-    title: 'Custom Branding',
-    description: 'Personalize your booking page with colors and profile',
-    icon: '🎨',
-  },
-  {
-    title: 'Easy Setup',
-    description: 'Get started in minutes with email/password signup',
-    icon: '⚡',
+    title: 'Automate Meeting Reminders',
+    description: 'Never miss a meeting with customizable email reminders. Set reminders for 48h, 24h, 2h, or 1h before.',
+    icon: '🔔',
   },
 ];
 
