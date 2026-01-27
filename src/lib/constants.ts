@@ -43,6 +43,39 @@ export const MVP_FEATURES = [
   },
 ];
 
+export const CALENDLY_STYLE_FEATURES = [
+  {
+    title: 'Connect your calendars',
+    description: 'Slotly connects to your calendars to automate scheduling with real-time availability. Calendar sync coming soon.',
+    icon: '📅',
+    comingSoon: true,
+  },
+  {
+    title: 'Add your availability',
+    description: 'Keep invitees informed of your availability. Take control of your calendar with detailed availability settings, scheduling rules, buffers, and more.',
+    icon: '⏰',
+    comingSoon: false,
+  },
+  {
+    title: 'Connect conferencing tools',
+    description: 'Sync your video conferencing tools and set preferences for in-person meetings or calls. Built-in video coming soon.',
+    icon: '🎥',
+    comingSoon: true,
+  },
+  {
+    title: 'Customize your event types',
+    description: 'Choose from pre-built templates or quickly create custom event types for any meeting you need to schedule.',
+    icon: '🎯',
+    comingSoon: false,
+  },
+  {
+    title: 'Share your scheduling link',
+    description: 'Easily book meetings by sharing your scheduling link on your website, landing pages, or emails.',
+    icon: '🔗',
+    comingSoon: false,
+  },
+];
+
 export const FUTURE_FEATURES = [
   'Built-in video conferencing',
   'Calendar sync',

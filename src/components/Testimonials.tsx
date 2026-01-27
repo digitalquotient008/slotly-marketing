@@ -21,20 +21,20 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Trusted by professionals worldwide
+            Discover how businesses grow with Slotly
           </h2>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 mb-4">&quot;{testimonial.content}&quot;</p>
+            <div key={index} className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow">
+              <p className="text-gray-700 mb-6 text-lg leading-relaxed">&quot;{testimonial.content}&quot;</p>
               <div className="flex items-center">
-                <div className="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold mr-3">
+                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold mr-4">
                   {testimonial.avatar}
                 </div>
                 <div>
