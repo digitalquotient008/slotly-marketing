@@ -7,7 +7,20 @@ export default function PricingCards() {
   const [billingPeriod, setBillingPeriod] = useState<'yearly' | 'monthly'>('yearly');
   const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.slotly.com';
 
-  const plans = [
+  const plans: Array<{
+    name: string;
+    description: string;
+    price: string | null;
+    priceSubtext: string;
+    priceAmount?: string;
+    savings?: string | null;
+    badge: string | null;
+    recommended: boolean;
+    buttonText: string;
+    buttonStyle: string;
+    features: string[];
+    comingSoon?: boolean;
+  }> = [
     {
       name: 'Free',
       description: 'For personal use',
