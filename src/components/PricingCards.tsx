@@ -162,18 +162,29 @@ export default function PricingCards() {
               )}
             </div>
 
-            <Link
-              href={plan.comingSoon ? '#' : `${APP_URL}/auth/signup`}
-              className={`block w-full text-center px-4 py-3 rounded-lg font-semibold transition-colors mb-6 ${plan.buttonStyle} ${
-                plan.comingSoon ? 'opacity-50 cursor-not-allowed' : ''
-              }`}
-              onClick={(e) => plan.comingSoon && e.preventDefault()}
-            >
-              {plan.buttonText}
-            </Link>
+            {plan.name === 'Enterprise' ? (
+              <a
+                href="mailto:sales@slotly.com"
+                className={`block w-full text-center px-4 py-3 rounded-lg font-semibold transition-colors mb-6 ${plan.buttonStyle}`}
+              >
+                {plan.buttonText}
+              </a>
+            ) : (
+              <>
+                <Link
+                  href={plan.comingSoon ? '#' : `${APP_URL}/auth/signup`}
+                  className={`block w-full text-center px-4 py-3 rounded-lg font-semibold transition-colors mb-6 ${plan.buttonStyle} ${
+                    plan.comingSoon ? 'opacity-50 cursor-not-allowed' : ''
+                  }`}
+                  onClick={(e) => plan.comingSoon && e.preventDefault()}
+                >
+                  {plan.buttonText}
+                </Link>
 
-            {plan.comingSoon && (
-              <p className="text-xs text-gray-500 text-center mb-4">Coming soon</p>
+                {plan.comingSoon && (
+                  <p className="text-xs text-gray-500 text-center mb-4">Coming soon</p>
+                )}
+              </>
             )}
 
             <ul className="space-y-3">
