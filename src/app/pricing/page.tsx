@@ -20,7 +20,11 @@ export default function PricingPage() {
     },
     {
       question: 'What features are coming soon?',
-      answer: 'We\'re working on built-in video conferencing, calendar sync, invoicing, meeting polls, and website embedding widgets. These features exist in the codebase and will be enabled based on user feedback.',
+      answer: 'We\'re working on built-in video conferencing, calendar sync (sync with Google Calendar, Outlook, and Apple Calendar to avoid double bookings), invoicing, meeting polls, and website embedding widgets. These features exist in the codebase and will be enabled based on user feedback.',
+    },
+    {
+      question: 'What is calendar sync?',
+      answer: 'Calendar sync allows Slotly to connect with your existing calendar (Google Calendar, Outlook, or Apple Calendar) to automatically block out busy times and prevent double bookings. When someone books a time slot in Slotly, it will check your connected calendar to ensure you\'re available.',
     },
     {
       question: 'Can I self-host Slotly?',

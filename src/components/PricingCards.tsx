@@ -24,7 +24,7 @@ export default function PricingCards() {
     {
       name: 'Free',
       description: 'For personal use',
-      price: 'Always free',
+      price: 'Free',
       priceSubtext: '',
       badge: null,
       recommended: false,
@@ -37,6 +37,7 @@ export default function PricingCards() {
         'Email notifications',
         'Timezone support',
         'Custom branding',
+        '50 bookings per month',
       ],
     },
     {
@@ -51,8 +52,9 @@ export default function PricingCards() {
       buttonStyle: 'bg-blue-600 text-white hover:bg-blue-700',
       features: [
         'Everything in Free',
+        'Unlimited bookings',
         'Advanced analytics',
-        'Priority support',
+        'Priority tech support',
         'Custom integrations',
         'Team collaboration',
         'API access',
@@ -176,12 +178,12 @@ export default function PricingCards() {
             </div>
 
             {plan.name === 'Enterprise' || plan.name === 'Teams' ? (
-              <a
-                href="mailto:sales@slotly.com"
+              <Link
+                href="/contact"
                 className={`block w-full text-center px-4 py-3 rounded-lg font-semibold transition-colors mb-6 ${plan.buttonStyle}`}
               >
                 {plan.buttonText}
-              </a>
+              </Link>
             ) : (
               <>
                 <Link
