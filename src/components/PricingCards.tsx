@@ -69,9 +69,8 @@ export default function PricingCards() {
     {
       name: 'Enterprise',
       description: 'For large companies',
-      price: 'Starts at',
-      priceAmount: '$15k',
-      priceSubtext: '/yr',
+      price: null,
+      priceSubtext: '',
       badge: null,
       recommended: false,
       buttonText: 'Talk to sales',
@@ -84,7 +83,7 @@ export default function PricingCards() {
         'Advanced security',
         'Custom integrations',
       ],
-      comingSoon: true,
+      comingSoon: false,
     },
   ];
 
@@ -137,22 +136,24 @@ export default function PricingCards() {
               <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
               <p className="text-sm text-gray-600 mb-4">{plan.description}</p>
               
-              <div className="mb-2">
-                {plan.priceAmount ? (
-                  <div>
-                    <span className="text-sm text-gray-600">{plan.price}</span>
-                    <span className="text-4xl font-bold text-gray-900 ml-2">{plan.priceAmount}</span>
-                    <span className="text-sm text-gray-600 ml-1">{plan.priceSubtext}</span>
-                  </div>
-                ) : (
-                  <div>
-                    <span className="text-4xl font-bold text-gray-900">{plan.price}</span>
-                    {plan.priceSubtext && (
+              {plan.price !== null && (
+                <div className="mb-2">
+                  {plan.priceAmount ? (
+                    <div>
+                      <span className="text-sm text-gray-600">{plan.price}</span>
+                      <span className="text-4xl font-bold text-gray-900 ml-2">{plan.priceAmount}</span>
                       <span className="text-sm text-gray-600 ml-1">{plan.priceSubtext}</span>
-                    )}
-                  </div>
-                )}
-              </div>
+                    </div>
+                  ) : (
+                    <div>
+                      <span className="text-4xl font-bold text-gray-900">{plan.price}</span>
+                      {plan.priceSubtext && (
+                        <span className="text-sm text-gray-600 ml-1">{plan.priceSubtext}</span>
+                      )}
+                    </div>
+                  )}
+                </div>
+              )}
               
               {plan.savings && (
                 <span className="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded">
