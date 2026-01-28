@@ -4,6 +4,7 @@ import HowItWorks from '@/components/HowItWorks';
 import Statistics from '@/components/Statistics';
 import Security from '@/components/Security';
 import Testimonials from '@/components/Testimonials';
+import UseCases from '@/components/UseCases';
 import CTA from '@/components/CTA';
 
 export default function Home() {
@@ -33,6 +34,8 @@ export default function Home() {
       <Statistics />
       
       <Testimonials />
+
+      <UseCases />
       
       <Security />
       
