@@ -28,6 +28,9 @@ export default function Header() {
               <Link href="/about" className="text-gray-600 hover:text-gray-900 text-sm font-medium">
                 About
               </Link>
+              <Link href="/contact" className="text-gray-600 hover:text-gray-900 text-sm font-medium">
+                Contact
+              </Link>
             </div>
           </div>
           <div className="flex items-center space-x-4">
@@ -59,6 +62,7 @@ export default function Header() {
             <Link href="/polls" className="block text-gray-600 hover:text-gray-900">Polls</Link>
             <Link href="/pricing" className="block text-gray-600 hover:text-gray-900">Pricing</Link>
             <Link href="/about" className="block text-gray-600 hover:text-gray-900">About</Link>
+            <Link href="/contact" className="block text-gray-600 hover:text-gray-900">Contact</Link>
           </div>
         )}
       </div>

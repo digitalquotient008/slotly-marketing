@@ -6,13 +6,15 @@ export const metadata = {
 };
 
 export default function TermsPage() {
+  const lastUpdated = 'Jan 28, 2026';
+
   return (
     <div className="bg-white min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Terms of Service</h1>
         
         <div className="prose prose-lg max-w-none space-y-6 text-gray-700">
-          <p className="text-sm text-gray-500">Last updated: {new Date().toLocaleDateString()}</p>
+          <p className="text-sm text-gray-500">Last updated: {lastUpdated}</p>
           
           <section>
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">1. Acceptance of Terms</h2>
