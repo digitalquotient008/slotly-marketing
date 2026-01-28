@@ -3,97 +3,83 @@ import Link from 'next/link';
 const useCases = [
   {
     title: 'Consultants',
-    subcategories: 'Business strategy, HR advisory',
+    subtitle: 'Strategy, operations, HR advisory',
     description:
-      'Define event types for discovery calls, onboarding, and retainer check-ins. Share your booking link and track clients in one place.',
+      'Run discovery calls, onboarding, and retainer check-ins with dedicated booking links and availability that fits your calendar.',
   },
   {
     title: 'Coaches',
-    subcategories: 'Life coaches, career coaches',
+    subtitle: 'Life, career, wellness',
     description:
-      'Schedule sessions, manage your client base with built-in CRM, and automate reminders to reduce no-shows.',
+      'Let clients book sessions, keep context in one place with contact history, and cut no-shows with reminders.',
   },
   {
-    title: 'Therapists',
-    subcategories: 'CBT, couples therapy',
+    title: 'Therapists & counselors',
+    subtitle: 'CBT, couples, wellness',
     description:
-      'Offer flexible recurring-style booking. Use buffers between sessions so you protect your time.',
+      'Offer recurring slots, buffers between sessions, and a calm booking experience—without double-books.',
   },
   {
-    title: 'Tutors',
-    subcategories: 'Private tutors, online educators',
+    title: 'Freelancers',
+    subtitle: 'Design, dev, consulting',
     description:
-      'Manage students via contacts, set availability by slot length, and keep lesson history in one place.',
+      'One link for kickoffs, reviews, and follow-ups. Spend less time scheduling and more time delivering.',
   },
   {
-    title: 'Service providers',
-    subcategories: 'Freelancers, creatives',
+    title: 'Tutors & educators',
+    subtitle: 'Private, remote, test prep',
     description:
-      'Share a booking link anywhere. Reduce no-shows with reminders and keep client context in built-in CRM.',
+      'Set lesson types and availability; students book quickly. Track progress and notes in your built-in CRM.',
   },
   {
-    title: 'Accountants',
-    subcategories: 'Tax advisors, bookkeepers',
+    title: 'Photographers & creatives',
+    subtitle: 'Portraits, events, brands',
     description:
-      'Schedule reviews and compliance check-ins with ease. Use meeting polls to agree on times with clients.',
+      'Book by shoot type and duration, share a link with clients, and keep location and prep in one place.',
   },
   {
-    title: 'Photographers',
-    subcategories: 'Weddings, corporate shoots',
+    title: 'Salons & grooming',
+    subtitle: 'Hair, barbers, spas',
     description:
-      'Create event types by shoot type, duration, and location. Let clients book slots that work.',
+      'Appointments, reminders, and a simple book-now flow. Reduce no-shows and back-and-forth.',
   },
   {
-    title: 'Groomers',
-    subcategories: 'Dog groomers, mobile vans',
+    title: 'Agents & advisors',
+    subtitle: 'Real estate, financial, legal',
     description:
-      'Let pet owners book and rebook quickly. Cut no-shows with automatic email reminders.',
+      'Schedule viewings, consultations, and follow-ups. Share your link with clients and keep your pipeline moving.',
   },
 ];
 
 export default function UseCases() {
   return (
-    <section className="py-16 sm:py-20 bg-gray-50">
+    <section className="py-16 sm:py-20 bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Designed for real-world services
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3 sm:mb-4">
+            Built for how you work
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            From consultants to groomers — share your link, manage clients, and cut no-shows.
+          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+            Scheduling that fits your practice—whether you run discovery calls, sessions, or client check-ins.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {useCases.map((useCase) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {useCases.map((uc) => (
             <div
-              key={useCase.title}
-              className="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-lg hover:border-gray-300 transition-all"
+              key={uc.title}
+              className="bg-slate-800/80 border border-slate-700/60 rounded-xl p-6 hover:border-slate-600 transition-colors flex flex-col"
             >
-              <h3 className="text-lg font-semibold text-gray-900 mb-1">
-                {useCase.title}
-              </h3>
-              <p className="text-sm text-gray-500 mb-4">{useCase.subcategories}</p>
-              <p className="text-gray-600 text-sm leading-relaxed mb-5">
-                {useCase.description}
-              </p>
+              <h3 className="text-lg font-semibold text-white mb-1">{uc.title}</h3>
+              <p className="text-sm text-slate-400 mb-3">{uc.subtitle}</p>
+              <p className="text-slate-300 text-sm leading-relaxed flex-1">{uc.description}</p>
               <Link
                 href="/features"
-                className="inline-flex items-center text-blue-600 hover:text-blue-700 text-sm font-medium"
+                className="inline-flex items-center mt-4 text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors"
               >
-                View use case
-                <svg
-                  className="w-4 h-4 ml-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
+                Learn more
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>
             </div>

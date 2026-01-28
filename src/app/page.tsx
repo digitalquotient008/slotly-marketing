@@ -1,10 +1,10 @@
 import Hero from '@/components/Hero';
 import Features from '@/components/Features';
 import HowItWorks from '@/components/HowItWorks';
+import UseCases from '@/components/UseCases';
 import Statistics from '@/components/Statistics';
 import Security from '@/components/Security';
 import Testimonials from '@/components/Testimonials';
-import UseCases from '@/components/UseCases';
 import CTA from '@/components/CTA';
 
 export default function Home() {
@@ -31,11 +31,11 @@ export default function Home() {
       
       <HowItWorks />
       
+      <UseCases />
+      
       <Statistics />
       
       <Testimonials />
-
-      <UseCases />
       
       <Security />
       
