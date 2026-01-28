@@ -20,7 +20,7 @@ export default function PricingPage() {
     },
     {
       question: 'What features are coming soon?',
-      answer: 'We\'re working on built-in video conferencing, calendar sync (sync with Google Calendar, Outlook, and Apple Calendar to avoid double bookings), invoicing, meeting polls, and website embedding widgets. These features exist in the codebase and will be enabled based on user feedback.',
+      answer: 'We\'re working on built-in video conferencing, calendar sync (sync with Google Calendar, Outlook, and Apple Calendar to avoid double bookings), invoicing, and website embedding widgets. Meeting polls are available now.',
     },
     {
       question: 'What is calendar sync?',

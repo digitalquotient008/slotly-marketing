@@ -7,6 +7,11 @@ export const MVP_FEATURES = [
     icon: '🔗',
   },
   {
+    title: 'Meeting Polls',
+    description: 'Send a poll, let invitees vote on times, and lock in the best slot—no back-and-forth.',
+    icon: '🗳️',
+  },
+  {
     title: 'View Contact Profiles & Activity',
     description: 'Track all interactions with your contacts. See booking history, notes, and scheduling activity in one place.',
     icon: '👥',
@@ -33,7 +38,6 @@ export const FUTURE_FEATURES = [
   'Built-in video conferencing',
   'Calendar sync',
   'Invoicing',
-  'Meeting polls',
   'Website embedding widgets',
 ];
 
