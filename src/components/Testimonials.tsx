@@ -19,10 +19,10 @@ export default function Testimonials() {
       icon: '✅',
     },
     {
-      title: 'Faster hiring coordination',
+      title: 'Stronger client relationships',
       description:
-        'Standardize interview scheduling with booking links and availability windows—candidates pick times that work.',
-      icon: '🤝',
+        'Keep context in one place with contact profiles and booking history, so every interaction feels personalized.',
+      icon: '👥',
     },
   ];
 
