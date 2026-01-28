@@ -1,22 +1,28 @@
 export default function Testimonials() {
-  const testimonials = [
+  const outcomes = [
     {
-      name: 'Sarah Johnson',
-      role: 'Business Consultant',
-      content: 'Slotly has simplified my scheduling process. My clients love the easy booking experience.',
-      avatar: 'SJ',
+      title: 'Reach more customers',
+      description:
+        'Share a booking link anywhere and let clients book instantly—without back-and-forth emails.',
+      icon: '📈',
     },
     {
-      name: 'Michael Chen',
-      role: 'Life Coach',
-      content: 'The built-in CRM is a game-changer. I can track all my client interactions in one place.',
-      avatar: 'MC',
+      title: 'Better ROI on time',
+      description:
+        'Automate scheduling, reminders, and follow-ups so your team can focus on delivering value.',
+      icon: '⏱️',
     },
     {
-      name: 'Emily Rodriguez',
-      role: 'Service Provider',
-      content: 'Setting up was incredibly fast. I was booking clients within minutes of signing up.',
-      avatar: 'ER',
+      title: 'Fewer scheduling mistakes',
+      description:
+        'Availability rules, buffers, and conflict checks help prevent double-bookings and no-shows.',
+      icon: '✅',
+    },
+    {
+      title: 'Faster hiring coordination',
+      description:
+        'Standardize interview scheduling with booking links and availability windows—candidates pick times that work.',
+      icon: '🤝',
     },
   ];
 
@@ -27,19 +33,24 @@ export default function Testimonials() {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
             Discover how businesses grow with Slotly
           </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Slotly helps teams book faster, stay organized, and reduce coordination overhead across the business.
+          </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-white rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow">
-              <p className="text-gray-700 mb-6 text-lg leading-relaxed">&quot;{testimonial.content}&quot;</p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold mr-4">
-                  {testimonial.avatar}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {outcomes.map((item) => (
+            <div
+              key={item.title}
+              className="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-lg transition-shadow"
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold text-xl">
+                  {item.icon}
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">{testimonial.role}</p>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
+                  <p className="text-gray-600 leading-relaxed">{item.description}</p>
                 </div>
               </div>
             </div>
