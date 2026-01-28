@@ -17,6 +17,7 @@ export default function Footer() {
               <li><Link href="/features" className="hover:text-white transition-colors">Features</Link></li>
               <li><Link href="/polls" className="hover:text-white transition-colors">Meeting Polls</Link></li>
               <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
+              <li><Link href="/integrations" className="hover:text-white transition-colors">Integrations</Link></li>
               <li><Link href="/features" className="hover:text-white transition-colors">Scheduling</Link></li>
               <li><Link href="/features" className="hover:text-white transition-colors">CRM</Link></li>
             </ul>

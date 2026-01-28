@@ -25,6 +25,9 @@ export default function Header() {
               <Link href="/pricing" className="text-gray-600 hover:text-gray-900 text-sm font-medium">
                 Pricing
               </Link>
+            <Link href="/integrations" className="text-gray-600 hover:text-gray-900 text-sm font-medium">
+              Integrations
+            </Link>
               <Link href="/about" className="text-gray-600 hover:text-gray-900 text-sm font-medium">
                 About
               </Link>
@@ -61,6 +64,7 @@ export default function Header() {
             <Link href="/features" className="block text-gray-600 hover:text-gray-900">Features</Link>
             <Link href="/polls" className="block text-gray-600 hover:text-gray-900">Polls</Link>
             <Link href="/pricing" className="block text-gray-600 hover:text-gray-900">Pricing</Link>
+            <Link href="/integrations" className="block text-gray-600 hover:text-gray-900">Integrations</Link>
             <Link href="/about" className="block text-gray-600 hover:text-gray-900">About</Link>
             <Link href="/contact" className="block text-gray-600 hover:text-gray-900">Contact</Link>
           </div>

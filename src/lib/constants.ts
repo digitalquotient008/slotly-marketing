@@ -2,6 +2,12 @@ export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.slotly.co
 
 export const MVP_FEATURES = [
   {
+    title: 'Google Calendar Sync',
+    description:
+      'Connect Google Calendar to block busy times automatically and create events when bookings are confirmed.',
+    icon: '📅',
+  },
+  {
     title: 'Customize Your Booking Link',
     description: 'Create a personalized booking URL that matches your brand. Share your unique link anywhere.',
     icon: '🔗',
@@ -36,7 +42,7 @@ export const MVP_FEATURES = [
 
 export const FUTURE_FEATURES = [
   'Built-in video conferencing',
-  'Calendar sync',
+  'Outlook & Apple calendar sync',
   'Invoicing',
   'Website embedding widgets',
 ];

@@ -35,6 +35,7 @@ export default function PricingCards() {
         'Public booking pages',
         'Meeting polls',
         'Built-in CRM',
+        'Google Calendar sync',
         'Email notifications',
         'Timezone support',
         'Custom branding',
