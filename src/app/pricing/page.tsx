@@ -16,7 +16,7 @@ export default function PricingPage() {
     },
     {
       question: 'What\'s included in the MVP?',
-      answer: 'The MVP includes event type creation, availability management, public booking pages, contact management (CRM), booking management, email notifications, timezone support, and custom branding.',
+      answer: 'The MVP includes event type creation, availability management, public booking pages, meeting polls, contact management (CRM), booking management, email notifications, timezone support, and custom branding.',
     },
     {
       question: 'What features are coming soon?',

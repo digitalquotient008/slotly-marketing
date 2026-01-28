@@ -106,6 +106,79 @@ export default function PollsPage() {
         </div>
       </section>
 
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
+            Great for
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Team scheduling</h3>
+              <p className="text-gray-600">
+                Weekly syncs, standups, project kickoffs, and recurring planning meetings.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Client coordination</h3>
+              <p className="text-gray-600">
+                When multiple stakeholders need to approve a time before you book.
+              </p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Interviews & panels</h3>
+              <p className="text-gray-600">
+                Get availability from multiple participants quickly and pick the best slot.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-10 text-center">
+            FAQ
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-xl p-6 border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Do invitees need an account?</h3>
+              <p className="text-gray-600">
+                No. Invitees can vote through a simple public poll link.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Can I set a deadline?</h3>
+              <p className="text-gray-600">
+                Yes. Add an optional voting deadline so everyone responds on time.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">How many time options can I add?</h3>
+              <p className="text-gray-600">
+                Add as many options as you need. More options usually means faster agreement.
+              </p>
+            </div>
+            <div className="bg-white rounded-xl p-6 border border-gray-200">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">What happens after voting?</h3>
+              <p className="text-gray-600">
+                Review responses and pick the best option to finalize the meeting.
+              </p>
+            </div>
+          </div>
+          <div className="text-center mt-10">
+            <Link
+              href={`${APP_URL}/dashboard/polls`}
+              className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold"
+            >
+              Go to Polls in the app
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <CTA />
     </div>
   );

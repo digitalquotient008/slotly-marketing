@@ -33,6 +33,7 @@ export default function PricingCards() {
       features: [
         'Event types & availability',
         'Public booking pages',
+        'Meeting polls',
         'Built-in CRM',
         'Email notifications',
         'Timezone support',
@@ -52,6 +53,7 @@ export default function PricingCards() {
       buttonStyle: 'bg-blue-600 text-white hover:bg-blue-700',
       features: [
         'Everything in Free',
+        'Meeting polls',
         'Unlimited bookings',
         'Advanced analytics',
         'Priority tech support',
@@ -74,7 +76,6 @@ export default function PricingCards() {
       features: [
         'Everything in Standard',
         'Advanced scheduling rules',
-        'Meeting polls',
         'Round-robin scheduling',
         'Team management',
         'Advanced reporting',

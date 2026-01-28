@@ -16,7 +16,7 @@ export default function FeaturesPage() {
               Powerful features, simple setup
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Everything you need to manage your schedule and bookings in one place
+              Everything you need to manage your schedule and bookings in one place — including Meeting Polls.
             </p>
           </div>
         </div>
