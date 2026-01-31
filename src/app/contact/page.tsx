@@ -8,22 +8,22 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="bg-white">
-      <section className="py-20 bg-white">
+    <div className="bg-slate-950 min-h-screen">
+      <section className="py-20 bg-slate-900">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Contact Sales
             </h1>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-slate-400">
               Interested in Teams or Enterprise plans? Let&apos;s discuss how Slotly can help your organization.
             </p>
           </div>
 
-          <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-8">
+          <div className="bg-slate-800/80 rounded-xl border border-slate-700 p-8">
             <form action="mailto:sales@slotly.com" method="post" encType="text/plain" className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
                   Name *
                 </label>
                 <input
@@ -31,13 +31,13 @@ export default function ContactPage() {
                   id="name"
                   name="name"
                   required
-                  className="w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border"
+                  className="w-full rounded-lg border-slate-600 bg-slate-900 text-white placeholder-slate-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border"
                   placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-2">
                   Email *
                 </label>
                 <input
@@ -45,32 +45,32 @@ export default function ContactPage() {
                   id="email"
                   name="email"
                   required
-                  className="w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border"
+                  className="w-full rounded-lg border-slate-600 bg-slate-900 text-white placeholder-slate-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border"
                   placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="company" className="block text-sm font-medium text-slate-300 mb-2">
                   Company
                 </label>
                 <input
                   type="text"
                   id="company"
                   name="company"
-                  className="w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border"
+                  className="w-full rounded-lg border-slate-600 bg-slate-900 text-white placeholder-slate-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border"
                   placeholder="Your company"
                 />
               </div>
 
               <div>
-                <label htmlFor="plan" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="plan" className="block text-sm font-medium text-slate-300 mb-2">
                   Interested Plan
                 </label>
                 <select
                   id="plan"
                   name="plan"
-                  className="w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border"
+                  className="w-full rounded-lg border-slate-600 bg-slate-900 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border"
                 >
                   <option value="">Select a plan</option>
                   <option value="teams">Teams</option>
@@ -80,7 +80,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">
                   Message *
                 </label>
                 <textarea
@@ -88,7 +88,7 @@ export default function ContactPage() {
                   name="message"
                   rows={5}
                   required
-                  className="w-full rounded-lg border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border"
+                  className="w-full rounded-lg border-slate-600 bg-slate-900 text-white placeholder-slate-500 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border"
                   placeholder="Tell us about your scheduling needs..."
                 />
               </div>
@@ -96,23 +96,23 @@ export default function ContactPage() {
               <div className="flex space-x-4">
                 <button
                   type="submit"
-                  className="flex-1 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-semibold"
+                  className="flex-1 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-500 transition font-semibold"
                 >
                   Send Message
                 </button>
                 <Link
                   href="/pricing"
-                  className="flex-1 bg-gray-100 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-200 transition font-semibold text-center"
+                  className="flex-1 bg-slate-700 text-slate-200 px-6 py-3 rounded-lg hover:bg-slate-600 transition font-semibold text-center"
                 >
                   Back to Pricing
                 </Link>
               </div>
             </form>
 
-            <div className="mt-8 pt-8 border-t border-gray-200">
-              <p className="text-sm text-gray-600 text-center">
+            <div className="mt-8 pt-8 border-t border-slate-700">
+              <p className="text-sm text-slate-400 text-center">
                 Or email us directly at{' '}
-                <a href="mailto:sales@slotly.com" className="text-blue-600 hover:text-blue-700 font-medium">
+                <a href="mailto:sales@slotly.com" className="text-blue-400 hover:text-blue-300 font-medium">
                   sales@slotly.com
                 </a>
               </p>

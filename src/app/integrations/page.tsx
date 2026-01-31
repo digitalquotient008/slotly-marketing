@@ -39,14 +39,14 @@ const integrations: Integration[] = [
 
 export default function IntegrationsPage() {
   return (
-    <div className="bg-white">
-      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="bg-slate-950 min-h-screen">
+      <section className="py-20 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Integrations
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               Connect Slotly to your calendar so availability stays accurate and
               bookings create events automatically.
             </p>
@@ -60,35 +60,35 @@ export default function IntegrationsPage() {
             {integrations.map((i) => (
               <div
                 key={i.name}
-                className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm"
+                className="bg-slate-800/80 rounded-xl border border-slate-700 p-6 hover:border-slate-600 transition-colors"
               >
                 <div className="flex items-start justify-between gap-3 mb-3">
-                  <h2 className="text-xl font-semibold text-gray-900">
+                  <h2 className="text-xl font-semibold text-white">
                     {i.name}
                   </h2>
                   {i.status === 'Available' ? (
-                    <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">
+                    <span className="text-xs bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded">
                       Available
                     </span>
                   ) : (
-                    <span className="text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded">
+                    <span className="text-xs bg-slate-600/50 text-slate-400 px-2 py-1 rounded">
                       Coming soon
                     </span>
                   )}
                 </div>
-                <p className="text-sm text-gray-600 mb-5">{i.description}</p>
+                <p className="text-sm text-slate-400 mb-5">{i.description}</p>
 
                 {i.cta ? (
                   <Link
                     href={i.cta.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-blue-700 transition-colors"
+                    className="inline-flex items-center justify-center bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-blue-500 transition-colors"
                   >
                     {i.cta.label}
                   </Link>
                 ) : (
-                  <div className="text-sm text-gray-500">
+                  <div className="text-sm text-slate-500">
                     Join the waitlist by creating a Slotly account.
                   </div>
                 )}
@@ -96,13 +96,13 @@ export default function IntegrationsPage() {
             ))}
           </div>
 
-          <div className="mt-10 text-center text-sm text-gray-600">
+          <div className="mt-10 text-center text-sm text-slate-400">
             Prefer to connect from inside the app? Go to{' '}
             <Link
               href={`${APP_URL}/dashboard/settings`}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-700 font-medium"
+              className="text-blue-400 hover:text-blue-300 font-medium"
             >
               Settings → Calendar Integrations
             </Link>

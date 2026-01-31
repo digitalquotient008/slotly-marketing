@@ -37,11 +37,11 @@ export default function PricingPage() {
   ];
 
   return (
-    <div className="bg-white">
-      <section className="py-20 bg-white">
+    <div className="bg-slate-950 min-h-screen">
+      <section className="py-20 bg-slate-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Pick the perfect plan for your team
             </h1>
             
@@ -50,16 +50,16 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section id="faq" className="py-20 bg-gray-50">
+      <section id="faq" className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl font-bold text-white mb-12 text-center">
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
-                <p className="text-gray-600">{faq.answer}</p>
+              <div key={index} className="bg-slate-800/80 border border-slate-700 rounded-lg p-6 hover:border-slate-600 transition-colors">
+                <h3 className="text-lg font-semibold text-white mb-2">{faq.question}</h3>
+                <p className="text-slate-400">{faq.answer}</p>
               </div>
             ))}
           </div>

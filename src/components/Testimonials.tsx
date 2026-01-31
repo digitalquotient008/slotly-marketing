@@ -27,13 +27,13 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-16 sm:py-20 bg-gray-50">
+    <section className="py-16 sm:py-20 bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-3 sm:mb-4">
             Discover how businesses grow with Slotly
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-slate-400 max-w-3xl mx-auto">
             Slotly helps teams book faster, stay organized, and reduce coordination overhead across the business.
           </p>
         </div>
@@ -42,15 +42,15 @@ export default function Testimonials() {
           {outcomes.map((item) => (
             <div
               key={item.title}
-              className="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-lg transition-shadow"
+              className="bg-slate-800/80 rounded-xl p-6 border border-slate-700 hover:border-slate-600 transition-colors"
             >
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-semibold text-xl">
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{item.description}</p>
+                  <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
+                  <p className="text-slate-400 leading-relaxed">{item.description}</p>
                 </div>
               </div>
             </div>

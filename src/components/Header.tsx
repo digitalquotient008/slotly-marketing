@@ -2,55 +2,58 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { APP_URL } from '@/lib/constants';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.slotly.com';
 
   return (
-    <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <nav className="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-2xl font-bold text-blue-600">
+            <Link href="/" className="text-2xl font-bold text-blue-400">
               Slotly
             </Link>
             <div className="hidden md:flex ml-10 space-x-8">
-              <Link href="/features" className="text-gray-600 hover:text-gray-900 text-sm font-medium">
+              <Link href="/features" className="text-slate-400 hover:text-white text-sm font-medium">
                 Features
               </Link>
-              <Link href="/polls" className="text-gray-600 hover:text-gray-900 text-sm font-medium">
+              <Link href="/#use-cases" className="text-slate-400 hover:text-white text-sm font-medium">
+                Built for how you work
+              </Link>
+              <Link href="/polls" className="text-slate-400 hover:text-white text-sm font-medium">
                 Polls
               </Link>
-              <Link href="/pricing" className="text-gray-600 hover:text-gray-900 text-sm font-medium">
+              <Link href="/pricing" className="text-slate-400 hover:text-white text-sm font-medium">
                 Pricing
               </Link>
-            <Link href="/integrations" className="text-gray-600 hover:text-gray-900 text-sm font-medium">
-              Integrations
-            </Link>
-              <Link href="/about" className="text-gray-600 hover:text-gray-900 text-sm font-medium">
+              <Link href="/integrations" className="text-slate-400 hover:text-white text-sm font-medium">
+                Integrations
+              </Link>
+              <Link href="/about" className="text-slate-400 hover:text-white text-sm font-medium">
                 About
               </Link>
-              <Link href="/contact" className="text-gray-600 hover:text-gray-900 text-sm font-medium">
+              <Link href="/contact" className="text-slate-400 hover:text-white text-sm font-medium">
                 Contact
               </Link>
             </div>
           </div>
           <div className="flex items-center space-x-4">
-            <Link 
-              href={`${APP_URL}/auth/login`} 
-              className="text-gray-600 hover:text-gray-900 text-sm font-medium"
+            <Link
+              href={`${APP_URL}/auth/login`}
+              className="text-slate-400 hover:text-white text-sm font-medium"
             >
               Log In
             </Link>
-            <Link 
-              href={`${APP_URL}/auth/signup`} 
-              className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-blue-700 transition-colors focus-visible:outline-2 focus-visible:outline-blue-600 focus-visible:outline-offset-2"
+            <Link
+              href={`${APP_URL}/auth/signup`}
+              className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-blue-500 transition-colors focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2"
             >
               Sign Up
             </Link>
             <button
-              className="md:hidden text-gray-600 hover:text-gray-900"
+              className="md:hidden text-slate-400 hover:text-white"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -60,13 +63,14 @@ export default function Header() {
           </div>
         </div>
         {mobileMenuOpen && (
-          <div className="md:hidden py-4 space-y-2">
-            <Link href="/features" className="block text-gray-600 hover:text-gray-900">Features</Link>
-            <Link href="/polls" className="block text-gray-600 hover:text-gray-900">Polls</Link>
-            <Link href="/pricing" className="block text-gray-600 hover:text-gray-900">Pricing</Link>
-            <Link href="/integrations" className="block text-gray-600 hover:text-gray-900">Integrations</Link>
-            <Link href="/about" className="block text-gray-600 hover:text-gray-900">About</Link>
-            <Link href="/contact" className="block text-gray-600 hover:text-gray-900">Contact</Link>
+          <div className="md:hidden py-4 space-y-2 border-t border-slate-800">
+            <Link href="/features" className="block text-slate-400 hover:text-white">Features</Link>
+            <Link href="/#use-cases" className="block text-slate-400 hover:text-white">Built for how you work</Link>
+            <Link href="/polls" className="block text-slate-400 hover:text-white">Polls</Link>
+            <Link href="/pricing" className="block text-slate-400 hover:text-white">Pricing</Link>
+            <Link href="/integrations" className="block text-slate-400 hover:text-white">Integrations</Link>
+            <Link href="/about" className="block text-slate-400 hover:text-white">About</Link>
+            <Link href="/contact" className="block text-slate-400 hover:text-white">Contact</Link>
           </div>
         )}
       </div>

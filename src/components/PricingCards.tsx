@@ -2,10 +2,10 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { APP_URL } from '@/lib/constants';
 
 export default function PricingCards() {
   const [billingPeriod, setBillingPeriod] = useState<'yearly' | 'monthly'>('yearly');
-  const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.slotly.com';
 
   const plans: Array<{
     name: string;
@@ -29,7 +29,7 @@ export default function PricingCards() {
       badge: null,
       recommended: false,
       buttonText: 'Get started',
-      buttonStyle: 'bg-gray-900 text-white hover:bg-gray-800',
+      buttonStyle: 'bg-slate-700 text-white hover:bg-slate-600',
       features: [
         'Event types & availability',
         'Public booking pages',
@@ -108,25 +108,25 @@ export default function PricingCards() {
     <>
       {/* Billing Toggle */}
       <div className="flex items-center justify-center gap-4 mb-8">
-        <label className={`flex items-center cursor-pointer ${billingPeriod === 'yearly' ? 'text-gray-900' : 'text-gray-500'}`}>
+        <label className={`flex items-center cursor-pointer ${billingPeriod === 'yearly' ? 'text-white' : 'text-slate-500'}`}>
           <input
             type="radio"
             name="billing"
             value="yearly"
             checked={billingPeriod === 'yearly'}
             onChange={() => setBillingPeriod('yearly')}
-            className="mr-2 w-4 h-4 text-blue-600 focus:ring-blue-500"
+            className="mr-2 w-4 h-4 text-blue-500 focus:ring-blue-500 bg-slate-800 border-slate-600"
           />
           Billed yearly
         </label>
-        <label className={`flex items-center cursor-pointer ${billingPeriod === 'monthly' ? 'text-gray-900' : 'text-gray-500'}`}>
+        <label className={`flex items-center cursor-pointer ${billingPeriod === 'monthly' ? 'text-white' : 'text-slate-500'}`}>
           <input
             type="radio"
             name="billing"
             value="monthly"
             checked={billingPeriod === 'monthly'}
             onChange={() => setBillingPeriod('monthly')}
-            className="mr-2 w-4 h-4 text-blue-600 focus:ring-blue-500"
+            className="mr-2 w-4 h-4 text-blue-500 focus:ring-blue-500 bg-slate-800 border-slate-600"
           />
           Billed monthly
         </label>
@@ -137,10 +137,10 @@ export default function PricingCards() {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`bg-white rounded-lg border-2 p-6 relative ${
+            className={`bg-slate-800/80 rounded-lg border-2 p-6 relative ${
               plan.recommended
-                ? 'border-blue-600 shadow-lg'
-                : 'border-gray-200 hover:border-gray-300'
+                ? 'border-blue-500 shadow-lg'
+                : 'border-slate-700 hover:border-slate-600'
             }`}
           >
             {plan.badge && (
@@ -150,22 +150,22 @@ export default function PricingCards() {
             )}
             
             <div className="mb-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
-              <p className="text-sm text-gray-600 mb-4">{plan.description}</p>
+              <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
+              <p className="text-sm text-slate-400 mb-4">{plan.description}</p>
               
               {plan.price !== null && (
                 <div className="mb-2">
                   {plan.priceAmount ? (
                     <div>
-                      <span className="text-sm text-gray-600">{plan.price}</span>
-                      <span className="text-4xl font-bold text-gray-900 ml-2">{plan.priceAmount}</span>
-                      <span className="text-sm text-gray-600 ml-1">{plan.priceSubtext}</span>
+                      <span className="text-sm text-slate-400">{plan.price}</span>
+                      <span className="text-4xl font-bold text-white ml-2">{plan.priceAmount}</span>
+                      <span className="text-sm text-slate-400 ml-1">{plan.priceSubtext}</span>
                     </div>
                   ) : (
                     <div>
-                      <span className="text-4xl font-bold text-gray-900">{plan.price}</span>
+                      <span className="text-4xl font-bold text-white">{plan.price}</span>
                       {plan.priceSubtext && (
-                        <span className="text-sm text-gray-600 ml-1">{plan.priceSubtext}</span>
+                        <span className="text-sm text-slate-400 ml-1">{plan.priceSubtext}</span>
                       )}
                     </div>
                   )}
@@ -173,7 +173,7 @@ export default function PricingCards() {
               )}
               
               {plan.savings && (
-                <span className="inline-block bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded">
+                <span className="inline-block bg-blue-500/20 text-blue-300 text-xs font-medium px-2 py-1 rounded">
                   {plan.savings}
                 </span>
               )}
@@ -199,7 +199,7 @@ export default function PricingCards() {
                 </Link>
 
                 {plan.comingSoon && (
-                  <p className="text-xs text-gray-500 text-center mb-4">Coming soon</p>
+                  <p className="text-xs text-slate-500 text-center mb-4">Coming soon</p>
                 )}
               </>
             )}
@@ -207,10 +207,10 @@ export default function PricingCards() {
             <ul className="space-y-3">
               {plan.features.map((feature, featureIndex) => (
                 <li key={featureIndex} className="flex items-start">
-                  <svg className="w-5 h-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-5 h-5 text-emerald-400 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="text-sm text-gray-700">{feature}</span>
+                  <span className="text-sm text-slate-300">{feature}</span>
                 </li>
               ))}
             </ul>

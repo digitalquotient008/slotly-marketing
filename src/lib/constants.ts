@@ -1,4 +1,5 @@
-export const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.slotly.com';
+const raw = process.env.NEXT_PUBLIC_APP_URL || 'https://app.slotly.com';
+export const APP_URL = raw.replace(/\/$/, '');
 
 export const MVP_FEATURES = [
   {

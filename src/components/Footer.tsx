@@ -1,20 +1,21 @@
 import Link from 'next/link';
+import { APP_URL } from '@/lib/constants';
 
 export default function Footer() {
-  const APP_URL = process.env.NEXT_PUBLIC_APP_URL || 'https://app.slotly.com';
 
   return (
-    <footer className="bg-gray-900 text-gray-400 py-16">
+    <footer className="bg-slate-900 border-t border-slate-800 text-slate-400 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           <div className="col-span-2 md:col-span-1">
             <h3 className="text-white font-bold text-lg mb-4">Slotly</h3>
-            <p className="text-sm">The simple scheduling platform for professionals.</p>
+            <p className="text-sm text-slate-400">The simple scheduling platform for professionals.</p>
           </div>
           <div>
             <h4 className="text-white font-semibold mb-4">Product</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/features" className="hover:text-white transition-colors">Features</Link></li>
+              <li><Link href="/#use-cases" className="hover:text-white transition-colors">Built for how you work</Link></li>
               <li><Link href="/polls" className="hover:text-white transition-colors">Meeting Polls</Link></li>
               <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
               <li><Link href="/integrations" className="hover:text-white transition-colors">Integrations</Link></li>
@@ -54,7 +55,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
           <p>&copy; {new Date().getFullYear()} Slotly. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
