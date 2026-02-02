@@ -2,8 +2,8 @@ import Link from 'next/link';
 import CTA from '@/components/CTA';
 
 export const metadata = {
-  title: 'Contact Sales - MeetVault',
-  description: 'Get in touch with our sales team to discuss Teams plans and custom solutions.',
+  title: 'Contact Us - MeetVault',
+  description: 'Get in touch to discuss Teams plans, custom solutions, or any questions.',
 };
 
 export default function ContactPage() {
@@ -13,7 +13,7 @@ export default function ContactPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              Contact Sales
+              Contact Us
             </h1>
             <p className="text-xl text-slate-400">
               Interested in Teams plans or need a custom solution? Let&apos;s discuss how MeetVault can help your organization.
