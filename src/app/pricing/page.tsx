@@ -46,6 +46,17 @@ export default function PricingPage() {
             </h1>
             
             <PricingCards />
+            <div className="text-center mt-8">
+              <Link
+                href="/contact"
+                className="inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold"
+              >
+                Need help choosing? Schedule a demo
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

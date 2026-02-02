@@ -43,6 +43,11 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Get Started</h4>
             <ul className="space-y-2 text-sm">
               <li>
+                <Link href="/contact" className="hover:text-white transition-colors font-medium text-blue-400 hover:text-blue-300">
+                  Schedule a demo
+                </Link>
+              </li>
+              <li>
                 <Link href={`${APP_URL}/auth/signup`} className="hover:text-white transition-colors">
                   Sign Up
                 </Link>

@@ -39,12 +39,18 @@ export default function Header() {
               </Link>
             </div>
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3 sm:space-x-4">
             <Link
               href={`${APP_URL}/auth/login`}
               className="text-slate-400 hover:text-white text-sm font-medium"
             >
               Log In
+            </Link>
+            <Link
+              href="/contact"
+              className="border border-slate-600 text-slate-200 px-4 py-2 rounded-md text-sm font-semibold hover:border-blue-500 hover:bg-slate-800/50 transition-colors"
+            >
+              Schedule a demo
             </Link>
             <Link
               href={`${APP_URL}/auth/signup`}
@@ -64,6 +70,7 @@ export default function Header() {
         </div>
         {mobileMenuOpen && (
           <div className="md:hidden py-4 space-y-2 border-t border-slate-800">
+            <Link href="/contact" className="block py-2 text-blue-400 font-semibold hover:text-blue-300">Schedule a demo</Link>
             <Link href="/features" className="block text-slate-400 hover:text-white">Features</Link>
             <Link href="/#use-cases" className="block text-slate-400 hover:text-white">Built for how you work</Link>
             <Link href="/polls" className="block text-slate-400 hover:text-white">Polls</Link>

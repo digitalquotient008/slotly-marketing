@@ -13,7 +13,7 @@ export default function Hero() {
           <p className="text-lg sm:text-xl md:text-2xl text-slate-400 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed font-normal">
             MeetVault is easy enough for individual users, and powerful enough for growing businesses — with built-in CRM and self-hosted options.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 justify-center items-center">
             <Link
               href={`${APP_URL}/auth/signup`}
               className="bg-blue-600 text-white px-8 py-3.5 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-blue-500 transition-all shadow-md hover:shadow-lg focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 w-full sm:w-auto text-center min-w-[200px]"
@@ -21,8 +21,14 @@ export default function Hero() {
               Sign up for free
             </Link>
             <Link
+              href="/contact"
+              className="border-2 border-slate-600 text-slate-200 px-8 py-3.5 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:border-blue-500 hover:bg-slate-800/50 transition-all w-full sm:w-auto text-center min-w-[200px]"
+            >
+              Schedule a demo
+            </Link>
+            <Link
               href="#how-it-works"
-              className="bg-transparent text-slate-200 px-8 py-3.5 sm:py-4 rounded-lg text-base sm:text-lg font-semibold border-2 border-slate-600 hover:border-blue-500 hover:bg-slate-800/50 transition-all focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2 w-full sm:w-auto text-center min-w-[200px]"
+              className="text-slate-400 hover:text-white px-8 py-3.5 sm:py-4 text-base sm:text-lg font-semibold transition-colors w-full sm:w-auto text-center"
             >
               See how it works
             </Link>
