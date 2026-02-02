@@ -16,7 +16,7 @@ export default function ContactPage() {
               Contact Sales
             </h1>
             <p className="text-xl text-slate-400">
-              Interested in Teams plans? Let&apos;s discuss how MeetVault can help your organization.
+              Interested in Teams plans or need a custom solution? Let&apos;s discuss how MeetVault can help your organization.
             </p>
           </div>
 

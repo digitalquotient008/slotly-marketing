@@ -61,6 +61,26 @@ export default function PricingPage() {
         </div>
       </section>
 
+      <section className="py-12 sm:py-16 border-y border-slate-800">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+            Need something tailored to your needs?
+          </h2>
+          <p className="text-slate-400 text-lg mb-6">
+            Every team is different – if our plans don&apos;t quite fit, we&apos;re happy to build a custom solution for you.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center bg-slate-800 border border-slate-600 text-white px-6 py-3 rounded-lg font-semibold hover:border-blue-500 hover:bg-slate-700/50 transition-colors"
+          >
+            Get in touch
+            <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
+      </section>
+
       <section id="faq" className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-white mb-12 text-center">
