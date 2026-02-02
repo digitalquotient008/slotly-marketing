@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Privacy Policy - Slotly',
-  description: 'Slotly Privacy Policy - How we collect, use, and protect your data.',
+  title: 'Privacy Policy - MeetVault',
+  description: 'MeetVault Privacy Policy - How we collect, use, and protect your data.',
 };
 
 export default function PrivacyPage() {
@@ -71,8 +71,8 @@ export default function PrivacyPage() {
             <h2 className="text-2xl font-semibold text-white mt-8 mb-4">6. Contact Us</h2>
             <p className="text-slate-400">
               If you have questions about this Privacy Policy, please contact us at{' '}
-              <a href="mailto:privacy@slotly.com" className="text-blue-400 hover:text-blue-300">
-                privacy@slotly.com
+              <a href="mailto:privacy@meetvault.app" className="text-blue-400 hover:text-blue-300">
+                privacy@meetvault.app
               </a>
             </p>
           </section>

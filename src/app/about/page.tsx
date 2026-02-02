@@ -1,8 +1,8 @@
 import CTA from '@/components/CTA';
 
 export const metadata = {
-  title: 'About - Slotly',
-  description: 'Learn about Slotly and our mission to simplify scheduling.',
+  title: 'About - MeetVault',
+  description: 'Learn about MeetVault and our mission to simplify scheduling.',
 };
 
 export default function AboutPage() {
@@ -12,7 +12,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              About Slotly
+              About MeetVault
             </h1>
             <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               Making scheduling simple for everyone
@@ -26,14 +26,14 @@ export default function AboutPage() {
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-bold text-white mb-6">Our Mission</h2>
             <p className="text-slate-400 mb-6 text-lg">
-              Slotly was born from a simple idea: scheduling meetings shouldn&apos;t require multiple tools, 
+              MeetVault was born from a simple idea: scheduling meetings shouldn&apos;t require multiple tools, 
               complex integrations, or expensive subscriptions. We believe that professionals should have access 
               to powerful scheduling tools that are easy to use and affordable.
             </p>
             
             <h2 className="text-3xl font-bold text-white mb-6 mt-12">What Makes Us Different</h2>
             <p className="text-slate-400 mb-6 text-lg">
-              Unlike other scheduling platforms, Slotly includes essential features like contact management 
+              Unlike other scheduling platforms, MeetVault includes essential features like contact management 
               (CRM) built right in. No need to connect external tools or pay for multiple subscriptions. 
               Everything you need is in one place.
             </p>
@@ -46,7 +46,7 @@ export default function AboutPage() {
             
             <h2 className="text-3xl font-bold text-white mb-6 mt-12">Your Data, Your Control</h2>
             <p className="text-slate-400 mb-6 text-lg">
-              Slotly can be self-hosted. You own your data and have full control 
+              MeetVault can be self-hosted. You own your data and have full control 
               over your scheduling platform. We believe in transparency and giving you the freedom to 
               choose how you use our tools.
             </p>

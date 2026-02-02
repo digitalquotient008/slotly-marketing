@@ -10,7 +10,7 @@ interface CTAProps {
 
 export default function CTA({ 
   title = 'Ready to get started?',
-  description = 'Join thousands of professionals who use Slotly to schedule smarter.',
+  description = 'Join thousands of professionals who use MeetVault to schedule smarter.',
   buttonText = 'Sign up for free',
   variant = 'primary'
 }: CTAProps) {

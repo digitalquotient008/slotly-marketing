@@ -2,8 +2,8 @@ import { MVP_FEATURES, FUTURE_FEATURES } from '@/lib/constants';
 import CTA from '@/components/CTA';
 
 export const metadata = {
-  title: 'Features - Slotly',
-  description: 'Discover all the features Slotly offers for scheduling and managing appointments.',
+  title: 'Features - MeetVault',
+  description: 'Discover all the features MeetVault offers for scheduling and managing appointments.',
 };
 
 export default function FeaturesPage() {

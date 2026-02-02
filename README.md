@@ -1,6 +1,6 @@
-# Slotly Marketing Website
+# MeetVault Marketing Website
 
-Modern, SEO-optimized marketing website for Slotly built with Next.js, TypeScript, and TailwindCSS.
+Modern, SEO-optimized marketing website for MeetVault built with Next.js, TypeScript, and TailwindCSS.
 
 ## Features
 
@@ -67,7 +67,7 @@ GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
 ## Project Structure
 
 ```
-slotly-marketing/
+meetvault-marketing/
 ├── public/          # Static assets
 ├── src/
 │   ├── app/         # Next.js pages

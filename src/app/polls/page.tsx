@@ -3,8 +3,8 @@ import CTA from '@/components/CTA';
 import { APP_URL } from '@/lib/constants';
 
 export const metadata = {
-  title: 'Meeting Polls - Slotly',
-  description: 'Let invitees vote on the best meeting time and schedule faster with Slotly Meeting Polls.',
+  title: 'Meeting Polls - MeetVault',
+  description: 'Let invitees vote on the best meeting time and schedule faster with MeetVault Meeting Polls.',
 };
 
 export default function PollsPage() {

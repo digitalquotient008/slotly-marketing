@@ -2,7 +2,7 @@ export default function Security() {
   const securityFeatures = [
     {
       title: 'Self-hosted Option',
-      description: 'Deploy Slotly on your own infrastructure and maintain full control over your data.',
+      description: 'Deploy MeetVault on your own infrastructure and maintain full control over your data.',
       icon: '🏠',
     },
     {

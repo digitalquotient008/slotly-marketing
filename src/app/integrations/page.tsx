@@ -3,8 +3,8 @@ import CTA from '@/components/CTA';
 import { APP_URL } from '@/lib/constants';
 
 export const metadata = {
-  title: 'Integrations - Slotly',
-  description: 'Connect Slotly with the tools you already use, starting with Google Calendar.',
+  title: 'Integrations - MeetVault',
+  description: 'Connect MeetVault with the tools you already use, starting with Google Calendar.',
 };
 
 type Integration = {
@@ -32,7 +32,7 @@ const integrations: Integration[] = [
   },
   {
     name: 'Apple Calendar',
-    description: 'Keep your Apple Calendar in sync with your Slotly bookings.',
+    description: 'Keep your Apple Calendar in sync with your MeetVault bookings.',
     status: 'ComingSoon',
   },
 ];
@@ -47,7 +47,7 @@ export default function IntegrationsPage() {
               Integrations
             </h1>
             <p className="text-xl text-slate-400 max-w-3xl mx-auto">
-              Connect Slotly to your calendar so availability stays accurate and
+              Connect MeetVault to your calendar so availability stays accurate and
               bookings create events automatically.
             </p>
           </div>
@@ -89,7 +89,7 @@ export default function IntegrationsPage() {
                   </Link>
                 ) : (
                   <div className="text-sm text-slate-500">
-                    Join the waitlist by creating a Slotly account.
+                    Join the waitlist by creating a MeetVault account.
                   </div>
                 )}
               </div>
@@ -113,7 +113,7 @@ export default function IntegrationsPage() {
 
       <CTA
         title="Keep availability accurate"
-        description="Connect Google Calendar in minutes and let Slotly prevent double bookings automatically."
+        description="Connect Google Calendar in minutes and let MeetVault prevent double bookings automatically."
         buttonText="Create your free account"
       />
     </div>

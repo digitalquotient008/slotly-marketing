@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Terms of Service - Slotly',
-  description: 'Slotly Terms of Service - Terms and conditions for using Slotly.',
+  title: 'Terms of Service - MeetVault',
+  description: 'MeetVault Terms of Service - Terms and conditions for using MeetVault.',
 };
 
 export default function TermsPage() {
@@ -19,20 +19,20 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-semibold text-white mt-8 mb-4">1. Acceptance of Terms</h2>
             <p>
-              By accessing and using Slotly, you accept and agree to be bound by the terms and provision of this agreement.
+              By accessing and using MeetVault, you accept and agree to be bound by the terms and provision of this agreement.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold text-white mt-8 mb-4">2. Use License</h2>
             <p>
-              Permission is granted to temporarily use Slotly for personal and commercial scheduling purposes. 
+              Permission is granted to temporarily use MeetVault for personal and commercial scheduling purposes. 
               This is the grant of a license, not a transfer of title, and under this license you may not:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Modify or copy the materials</li>
               <li>Use the materials for any commercial purpose without explicit permission</li>
-              <li>Attempt to reverse engineer any software contained in Slotly</li>
+              <li>Attempt to reverse engineer any software contained in MeetVault</li>
               <li>Remove any copyright or other proprietary notations from the materials</li>
             </ul>
           </section>
@@ -47,7 +47,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-2xl font-semibold text-white mt-8 mb-4">4. Acceptable Use</h2>
-            <p>You agree not to use Slotly to:</p>
+            <p>You agree not to use MeetVault to:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Violate any applicable laws or regulations</li>
               <li>Infringe upon the rights of others</li>
@@ -67,7 +67,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-2xl font-semibold text-white mt-8 mb-4">6. Limitation of Liability</h2>
             <p>
-              Slotly shall not be liable for any indirect, incidental, special, consequential, or punitive damages 
+              MeetVault shall not be liable for any indirect, incidental, special, consequential, or punitive damages 
               resulting from your use or inability to use the service.
             </p>
           </section>
@@ -76,8 +76,8 @@ export default function TermsPage() {
             <h2 className="text-2xl font-semibold text-white mt-8 mb-4">7. Contact Us</h2>
             <p className="text-slate-400">
               If you have questions about these Terms, please contact us at{' '}
-              <a href="mailto:legal@slotly.com" className="text-blue-400 hover:text-blue-300">
-                legal@slotly.com
+              <a href="mailto:legal@meetvault.app" className="text-blue-400 hover:text-blue-300">
+                legal@meetvault.app
               </a>
             </p>
           </section>

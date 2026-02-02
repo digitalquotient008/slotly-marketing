@@ -3,8 +3,8 @@ import CTA from '@/components/CTA';
 import PricingCards from '@/components/PricingCards';
 
 export const metadata = {
-  title: 'Pricing - Slotly',
-  description: 'Simple, transparent pricing for Slotly scheduling platform.',
+  title: 'Pricing - MeetVault',
+  description: 'Simple, transparent pricing for MeetVault scheduling platform.',
 };
 
 export default function PricingPage() {
@@ -24,15 +24,15 @@ export default function PricingPage() {
     },
     {
       question: 'What is calendar sync?',
-      answer: 'Calendar sync connects Slotly with your existing calendar to automatically block out busy times and prevent double bookings. Google Calendar sync is available now, and Outlook/Apple support is coming soon.',
+      answer: 'Calendar sync connects MeetVault with your existing calendar to automatically block out busy times and prevent double bookings. Google Calendar sync is available now, and Outlook/Apple support is coming soon.',
     },
     {
-      question: 'Can I self-host Slotly?',
-      answer: 'Yes! Slotly can be self-hosted. You own your data and have full control over your deployment.',
+      question: 'Can I self-host MeetVault?',
+      answer: 'Yes! MeetVault can be self-hosted. You own your data and have full control over your deployment.',
     },
     {
       question: 'Is there a free tier?',
-      answer: 'Yes, Slotly is free to start. No credit card required. You can begin scheduling immediately after signing up.',
+      answer: 'Yes, MeetVault is free to start. No credit card required. You can begin scheduling immediately after signing up.',
     },
   ];
 

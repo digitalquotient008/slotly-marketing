@@ -2,7 +2,7 @@ import Link from 'next/link';
 import CTA from '@/components/CTA';
 
 export const metadata = {
-  title: 'Contact Sales - Slotly',
+  title: 'Contact Sales - MeetVault',
   description: 'Get in touch with our sales team to discuss enterprise plans and custom solutions.',
 };
 
@@ -16,12 +16,12 @@ export default function ContactPage() {
               Contact Sales
             </h1>
             <p className="text-xl text-slate-400">
-              Interested in Teams or Enterprise plans? Let&apos;s discuss how Slotly can help your organization.
+              Interested in Teams or Enterprise plans? Let&apos;s discuss how MeetVault can help your organization.
             </p>
           </div>
 
           <div className="bg-slate-800/80 rounded-xl border border-slate-700 p-8">
-            <form action="mailto:sales@slotly.com" method="post" encType="text/plain" className="space-y-6">
+            <form action="mailto:sales@meetvault.app" method="post" encType="text/plain" className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
                   Name *
@@ -112,8 +112,8 @@ export default function ContactPage() {
             <div className="mt-8 pt-8 border-t border-slate-700">
               <p className="text-sm text-slate-400 text-center">
                 Or email us directly at{' '}
-                <a href="mailto:sales@slotly.com" className="text-blue-400 hover:text-blue-300 font-medium">
-                  sales@slotly.com
+                <a href="mailto:sales@meetvault.app" className="text-blue-400 hover:text-blue-300 font-medium">
+                  sales@meetvault.app
                 </a>
               </p>
             </div>
