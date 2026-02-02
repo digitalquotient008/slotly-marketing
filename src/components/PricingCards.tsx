@@ -62,7 +62,7 @@ export default function PricingCards() {
         'Team collaboration',
         'API access',
       ],
-      comingSoon: true,
+      comingSoon: false,
     },
     {
       name: 'Teams',
@@ -168,21 +168,21 @@ export default function PricingCards() {
                 {plan.buttonText}
               </Link>
             ) : (
-              <>
-                <Link
-                  href={plan.comingSoon ? '#' : `${APP_URL}/auth/signup`}
-                  className={`block w-full text-center px-4 py-3 rounded-lg font-semibold transition-colors mb-6 ${plan.buttonStyle} ${
-                    plan.comingSoon ? 'opacity-50 cursor-not-allowed' : ''
-                  }`}
-                  onClick={(e) => plan.comingSoon && e.preventDefault()}
-                >
-                  {plan.buttonText}
-                </Link>
-
-                {plan.comingSoon && (
-                  <p className="text-xs text-slate-500 text-center mb-4">Coming soon</p>
-                )}
-              </>
+              <Link
+                href={
+                  plan.comingSoon
+                    ? '#'
+                    : plan.name === 'Standard'
+                    ? `${APP_URL}/subscribe?plan=standard&interval=${billingPeriod}`
+                    : `${APP_URL}/auth/signup`
+                }
+                className={`block w-full text-center px-4 py-3 rounded-lg font-semibold transition-colors mb-6 ${plan.buttonStyle} ${
+                  plan.comingSoon ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
+                onClick={(e) => plan.comingSoon && e.preventDefault()}
+              >
+                {plan.buttonText}
+              </Link>
             )}
 
             <ul className="space-y-3">
