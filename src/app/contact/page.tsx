@@ -3,7 +3,7 @@ import CTA from '@/components/CTA';
 
 export const metadata = {
   title: 'Contact Sales - MeetVault',
-  description: 'Get in touch with our sales team to discuss enterprise plans and custom solutions.',
+  description: 'Get in touch with our sales team to discuss Teams plans and custom solutions.',
 };
 
 export default function ContactPage() {
@@ -16,7 +16,7 @@ export default function ContactPage() {
               Contact Sales
             </h1>
             <p className="text-xl text-slate-400">
-              Interested in Teams or Enterprise plans? Let&apos;s discuss how MeetVault can help your organization.
+              Interested in Teams plans? Let&apos;s discuss how MeetVault can help your organization.
             </p>
           </div>
 
@@ -74,7 +74,6 @@ export default function ContactPage() {
                 >
                   <option value="">Select a plan</option>
                   <option value="teams">Teams</option>
-                  <option value="enterprise">Enterprise</option>
                   <option value="custom">Custom Solution</option>
                 </select>
               </div>

@@ -83,25 +83,6 @@ export default function PricingCards() {
       ],
       comingSoon: false,
     },
-    {
-      name: 'Enterprise',
-      description: 'For large companies',
-      price: null,
-      priceSubtext: '',
-      badge: null,
-      recommended: false,
-      buttonText: 'Talk to sales',
-      buttonStyle: 'bg-blue-600 text-white hover:bg-blue-700',
-      features: [
-        'Everything in Teams',
-        'Dedicated support',
-        'Custom deployment',
-        'SLA guarantee',
-        'Advanced security',
-        'Custom integrations',
-      ],
-      comingSoon: false,
-    },
   ];
 
   return (
@@ -133,7 +114,7 @@ export default function PricingCards() {
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         {plans.map((plan, index) => (
           <div
             key={index}
@@ -179,7 +160,7 @@ export default function PricingCards() {
               )}
             </div>
 
-            {plan.name === 'Enterprise' || plan.name === 'Teams' ? (
+            {plan.name === 'Teams' ? (
               <Link
                 href="/contact"
                 className={`block w-full text-center px-4 py-3 rounded-lg font-semibold transition-colors mb-6 ${plan.buttonStyle}`}
