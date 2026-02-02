@@ -44,8 +44,8 @@ npm start
 Create a `.env.local` file:
 
 ```env
-NEXT_PUBLIC_APP_URL=https://app.slotly.com
-NEXT_PUBLIC_MARKETING_URL=https://slotly.com
+NEXT_PUBLIC_APP_URL=https://meetvault.app
+NEXT_PUBLIC_MARKETING_URL=https://meetvault.app
 GOOGLE_ANALYTICS_ID=G-XXXXXXXXXX
 ```
 

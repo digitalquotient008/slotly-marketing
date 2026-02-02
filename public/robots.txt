@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://slotly.com/sitemap.xml
+Sitemap: https://meetvault.app/sitemap.xml

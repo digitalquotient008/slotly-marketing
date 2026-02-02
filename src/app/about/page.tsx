@@ -44,9 +44,9 @@ export default function AboutPage() {
               we&apos;ll add advanced features based on real user feedback. Your needs drive our roadmap.
             </p>
             
-            <h2 className="text-3xl font-bold text-white mb-6 mt-12">Open & Transparent</h2>
+            <h2 className="text-3xl font-bold text-white mb-6 mt-12">Your Data, Your Control</h2>
             <p className="text-slate-400 mb-6 text-lg">
-              Slotly is open-source and can be self-hosted. You own your data and have full control 
+              Slotly can be self-hosted. You own your data and have full control 
               over your scheduling platform. We believe in transparency and giving you the freedom to 
               choose how you use our tools.
             </p>

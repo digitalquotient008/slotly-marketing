@@ -28,7 +28,7 @@ export default function PricingPage() {
     },
     {
       question: 'Can I self-host Slotly?',
-      answer: 'Yes! Slotly is open-source and can be self-hosted. You own your data and have full control over your deployment.',
+      answer: 'Yes! Slotly can be self-hosted. You own your data and have full control over your deployment.',
     },
     {
       question: 'Is there a free tier?',
