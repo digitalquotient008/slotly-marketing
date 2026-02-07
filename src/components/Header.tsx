@@ -47,12 +47,6 @@ export default function Header() {
               Log In
             </Link>
             <Link
-              href="/contact"
-              className="border border-slate-600 text-slate-200 px-4 py-2 rounded-md text-sm font-semibold hover:border-blue-500 hover:bg-slate-800/50 transition-colors"
-            >
-              Schedule a demo
-            </Link>
-            <Link
               href={`${APP_URL}/auth/signup`}
               className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-semibold hover:bg-blue-500 transition-colors focus-visible:outline-2 focus-visible:outline-blue-500 focus-visible:outline-offset-2"
             >
