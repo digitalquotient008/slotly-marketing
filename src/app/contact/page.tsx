@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import CTA from '@/components/CTA';
+import PlanRecommendation from '@/components/PlanRecommendation';
 
 export const metadata = {
   title: 'Contact Us - MeetVault',
@@ -21,6 +22,7 @@ export default function ContactPage() {
           </div>
 
           <div className="bg-slate-800/80 rounded-xl border border-slate-700 p-8">
+            <PlanRecommendation />
             <form action="mailto:sales@meetvault.app" method="post" encType="text/plain" className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-2">
@@ -73,6 +75,7 @@ export default function ContactPage() {
                   className="w-full rounded-lg border-slate-600 bg-slate-900 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-3 border"
                 >
                   <option value="">Select a plan</option>
+                  <option value="solo">Free / Solo</option>
                   <option value="teams">Teams</option>
                   <option value="custom">Custom Solution</option>
                 </select>
